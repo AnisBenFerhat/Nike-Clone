@@ -22,6 +22,13 @@ module.exports = {
     semi: ['error', 'always'],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-    'max-len': ['error', { code: 100 }],
+    'max-len': [
+      'error',
+      {
+        code: 100,
+        ignorePattern: '^\\s*export\\s+(?:{[^}]+}|\\*\\s+as\\s+\\w+)\\s+from',
+        ignoreUrls: true,
+      },
+    ],
   },
 };

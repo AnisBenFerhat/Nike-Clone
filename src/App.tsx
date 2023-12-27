@@ -1,10 +1,28 @@
 import './index.css';
+import {
+  CustomerReviews,
+  Footer,
+  Hero,
+  PopularProducts,
+  Services,
+  SpecialOffers,
+  Subscribe,
+  SuperQuality,
+} from './sections';
 
 function App() {
   return (
-    <section>
-      <h1>You Get Me!</h1>
-    </section>
+    <main className='relative'>
+      <h1>Nav</h1>
+      <Hero />
+      <PopularProducts />
+      <SuperQuality />
+      <Services />
+      <SpecialOffers />
+      <CustomerReviews />
+      <Subscribe />
+      <Footer />
+    </main>
   );
 }
 

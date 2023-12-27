@@ -1,3 +1,4 @@
+import Nav from './components/Nav';
 import './index.css';
 import {
   CustomerReviews,
@@ -13,7 +14,7 @@ import {
 function App() {
   return (
     <main className='relative'>
-      <h1>Nav</h1>
+      <Nav />
       <Hero />
       <PopularProducts />
       <SuperQuality />
